@@ -1,0 +1,83 @@
+/* Page Background with soft gradient */
+.payment-page {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e2e8f0 100%);
+  min-height: 100vh;
+}
+
+.payment-page h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.payment-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+/* Common Card Styling */
+.payment-left, .payment-right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* LEFT SIDE - Course Details */
+.course-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 5px solid #4f46e5;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE - Payment Area */
+.payment-right h2 { margin-bottom: 20px; color: #334155; }
+
+/* The Pay Button (Gradient Design) */
+.pay-now-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(45deg, #4f46e5, #06b6d4);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.pay-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.5);
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .payment-container { flex-direction: column; }
+}

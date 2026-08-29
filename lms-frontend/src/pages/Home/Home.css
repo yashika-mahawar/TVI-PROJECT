@@ -1,0 +1,365 @@
+body {
+  background: #f1f5f9;
+}
+/* ================= HERO SECTION ================= */
+
+.hero {
+    margin: 20px 10px ;
+  min-height:350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  border-radius:10px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.primary-btn {
+  background: #38bdf8;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #0ea5e9;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #0f172a;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+  padding: 100px 20px;
+  background-color: #f8fafc;
+  text-align: center;
+  margin: 10px 10px 20px;
+  border-radius:10px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.about p {
+  color: #475569;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.about-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  background: #f8fafc;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(4, 4, 4, 0.1);
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  background: #e0f2fe;
+}
+.about-card p{
+    font-size: 0.8rem;
+}
+.about-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+/* ================= COURSES SECTION ================= */
+
+.courses {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+  margin: 10px 10px 20px;
+  border-radius:10px;
+}
+
+.courses-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.courses h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.courses p {
+  color: #475569;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  background: #e0f2fe;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.course-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+/* ================= MENTORS SECTION ================= */
+
+.mentors {
+  padding: 80px 20px;
+  background: #f8fafc;
+  text-align: center;
+  margin: 10px 10px 20px;
+  border-radius:10px;
+}
+
+.mentors-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mentors h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.mentors p {
+  color: #475569;
+  margin-bottom: 40px;
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.mentor-card {
+  background:#f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-8px);
+  background: #e0f2fe;
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mentor-card h3 {
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.mentor-card p {
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.mentor-card span {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+/* ================= PRICING SECTION ================= */
+
+.pricing {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+  border-radius:10px;
+  margin: 10px 10px 20px;
+}
+
+.pricing-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.pricing p {
+  color: #475569;
+  margin-bottom: 40px;
+}
+
+.pricing-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: #f8fafc;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-card h1 {
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #0f172a;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+  color: #475569;
+}
+
+.price-card button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.price-card button:hover {
+  background: #0ea5e9;
+}
+
+/* Highlight (Middle Plan - GOLD) */
+.highlight {
+  background: #1e293b;
+  color: white;
+  transform: scale(1.05);
+}
+
+.highlight h1,
+.highlight ul li {
+  color: white;
+}
+
+.highlight button {
+  background: white;
+  color: #0f172a;
+}
+
+.highlight button:hover {
+  background: #cbd5e1;
+}
+/*common hover effect for all cards*/
+.about-card,
+.course-card,
+.mentor-card,
+.price-card {
+  border: 1px solid #e2e8f0;
+}
+/*same container width for all sections*/
+.hero,
+.about,
+.courses,
+.mentors,
+.pricing {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}

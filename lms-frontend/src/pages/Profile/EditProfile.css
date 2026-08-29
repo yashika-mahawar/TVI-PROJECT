@@ -1,0 +1,89 @@
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-profile-heading h3 {
+  margin: 0 0 4px 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.edit-profile-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.edit-profile-input-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.edit-profile-input-wrap {
+  position: relative;
+}
+
+.edit-profile-input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.edit-profile-input-wrap input {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border-radius: 10px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.edit-profile-input-wrap input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.edit-profile-msg {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.edit-profile-msg.is-error {
+  color: #ef4444;
+}
+
+.edit-profile-msg.is-success {
+  color: #22c55e;
+}
+
+.edit-profile-save-btn {
+  margin-top: 6px;
+  padding: 13px;
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 8px 16px -6px rgba(79, 70, 229, 0.45);
+}
+
+.edit-profile-save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -6px rgba(79, 70, 229, 0.55);
+}

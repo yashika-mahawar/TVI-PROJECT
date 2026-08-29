@@ -1,0 +1,107 @@
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#1e293b;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    padding:25px 20px;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sidebar-logo{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.sidebar-logo h2{
+    color:#fff;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar nav a:hover{
+    background:#334155;
+}
+
+.sidebar nav a.active{
+    background:#4f46e5;
+}
+
+.logout-btn{
+    margin-top:auto;
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.logout-btn:hover{
+    background:#dc2626;
+}
+/* Sidebar.css mein ye changes karein */
+
+/* Admin Portal Link ki styling */
+.admin-portal-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  margin: 0 20px 15px 20px; /* Margin adjust kiya hai */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Logout Button ki styling (Ise bhi class mein badal dein) */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  margin: 0 20px 20px 20px; /* Same margin jaisa Admin Portal */
+  background: #ef4444; /* Aapka red color */
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,129 @@
+.progress-loading {
+  padding: 40px;
+}
+
+.progress-header {
+  margin-bottom: 28px;
+}
+
+.progress-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin: 0 0 6px 0;
+}
+
+.progress-header p {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.progress-courses-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  grid-column: 1 / -1;
+}
+
+.progress-courses-card h2 {
+  margin: 0 0 20px 0;
+  color: var(--color-text);
+}
+
+.progress-course-item {
+  margin-bottom: 25px;
+  padding: 14px;
+  margin-left: -14px;
+  margin-right: -14px;
+  border-radius: 12px;
+  transition: background-color 0.15s ease;
+}
+
+.progress-course-item:hover {
+  background-color: #f8fafc;
+}
+
+.progress-course-item:last-child {
+  margin-bottom: 0;
+}
+
+.progress-course-item__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--color-success);
+}
+
+.progress-course-item__subtext {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.progress-stat-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.progress-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -10px rgba(79, 70, 229, 0.22);
+  border-color: #c7d2fe;
+}
+
+.progress-stat-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.progress-stat-card__label {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.progress-stat-card__value {
+  margin: 0 0 4px 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.progress-stat-card__subtext {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+}

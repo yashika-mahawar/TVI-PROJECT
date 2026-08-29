@@ -1,0 +1,125 @@
+.assignments-page {
+  color: var(--color-text);
+}
+
+.assignments-title {
+  margin: 0 0 8px 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.assignments-subtitle {
+  color: var(--color-text-muted);
+  margin: 0 0 28px 0;
+}
+
+.empty-state-text {
+  color: var(--color-text-muted);
+}
+
+.assignments-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 60px 20px;
+  color: var(--color-text-muted);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.assignments-empty__icon {
+  font-size: 2.2rem;
+  color: #c7d2fe;
+}
+
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.assignment-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -12px rgba(79, 70, 229, 0.24);
+  border-color: #c7d2fe;
+}
+
+.assignment-card__main {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.assignment-card__icon {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.assignment-card__title {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.assignment-card__course {
+  margin-top: 6px;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.assignment-card__due {
+  margin-top: 4px;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.assignment-card__desc {
+  margin-top: 8px;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.assignment-card__link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #4f46e5;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.assignment-card__status {
+  background: #fef2f2;
+  color: #ef4444;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}

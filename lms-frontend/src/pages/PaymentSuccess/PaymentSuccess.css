@@ -1,0 +1,67 @@
+.success-page {
+  min-height: 70vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+}
+
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.check {
+  font-size: 50px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.success-card h1 {
+  color: #002147;
+}
+
+.success-card p {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.success-card button {
+  background: #002147;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.success-card button:hover {
+  background: #f4b400;
+  color: #002147;
+}
+.receipt-details {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #cbd5e1;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: left;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.student-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.student-layout__sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.student-layout__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.student-layout__main {
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Student-only sidebar accent — scoped so it never affects the shared
+   Sidebar component when rendered inside AdminLayout. */
+.student-layout__sidebar .sidebar {
+  background: #0f172a;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.student-layout__sidebar .sidebar-logo {
+  padding-bottom: 20px;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.student-layout__sidebar .sidebar nav a {
+  position: relative;
+  border-left: 3px solid transparent;
+}
+
+.student-layout__sidebar .sidebar nav a:hover {
+  background: rgba(79, 70, 229, 0.16);
+}
+
+.student-layout__sidebar .sidebar nav a.active {
+  background: linear-gradient(135deg, rgba(67, 56, 202, 0.9), rgba(79, 70, 229, 0.9));
+  border-left: 3px solid #06b6d4;
+  box-shadow: 0 4px 12px -4px rgba(79, 70, 229, 0.5);
+}
+
+@media (max-width: 900px) {
+  .student-layout {
+    flex-direction: column;
+  }
+
+  .student-layout__sidebar {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    position: static;
+  }
+
+  .student-layout__main {
+    padding: 16px;
+  }
+}

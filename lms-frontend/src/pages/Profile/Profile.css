@@ -1,0 +1,127 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Banner */
+.profile-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 55%, #3b82f6 100%);
+  border-radius: 24px;
+  padding: 44px;
+  color: #ffffff;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  box-shadow: 0 16px 32px -10px rgba(79, 70, 229, 0.4);
+}
+
+.profile-avatar-shell {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-avatar-camera-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: #4338ca;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 9px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  transition: transform 0.15s ease;
+}
+
+.profile-avatar-camera-btn:hover {
+  transform: scale(1.08);
+}
+
+.profile-banner-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.profile-banner-text p {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Card */
+.profile-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 36px;
+  border-bottom: 2px solid #f1f5f9;
+  margin-bottom: 32px;
+}
+
+.profile-tabs button {
+  padding: 14px 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #64748b;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.profile-tabs button.active {
+  color: #4338ca;
+  border-bottom-color: #4338ca;
+}
+
+@media (max-width: 640px) {
+  .profile-banner {
+    padding: 28px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .profile-banner-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-card {
+    padding: 24px;
+  }
+}

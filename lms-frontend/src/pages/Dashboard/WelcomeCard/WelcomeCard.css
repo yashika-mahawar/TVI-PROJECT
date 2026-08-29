@@ -1,0 +1,121 @@
+.welcome-card-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 55%, #3b82f6 100%);
+  border-radius: 20px;
+  padding: 32px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 12px 28px -8px rgba(79, 70, 229, 0.4);
+}
+
+.welcome-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(6px);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.welcome-blob-1 {
+  width: 220px;
+  height: 220px;
+  background: #fde68a;
+  top: -100px;
+  right: 60px;
+}
+
+.welcome-blob-2 {
+  width: 180px;
+  height: 180px;
+  background: #06b6d4;
+  bottom: -100px;
+  right: -40px;
+}
+
+.welcome-identity {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-avatar {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.welcome-eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fde68a;
+  margin-bottom: 6px;
+}
+
+.welcome-text-content h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.welcome-text-content p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.continue-learning-btn {
+  position: relative;
+  background: #ffffff;
+  color: #4338ca;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.2);
+}
+
+.continue-learning-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.25);
+}
+
+.admin-theme {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important;
+}
+
+@media (max-width: 640px) {
+  .welcome-identity {
+    gap: 14px;
+  }
+
+  .welcome-avatar {
+    width: 46px;
+    height: 46px;
+    font-size: 1.15rem;
+  }
+
+  .welcome-text-content h1 {
+    font-size: 1.3rem;
+  }
+}
