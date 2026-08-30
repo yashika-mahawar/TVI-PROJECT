@@ -26,7 +26,7 @@ const app = express();
 // one's busy, so a hardcoded single localhost port kept breaking local dev —
 // allow any localhost port instead of just 5173.
 const ALLOWED_ORIGINS = [
-  "https://lms-frontend-xmbw.onrender.com", // <--- Yeh tumhare frontend ka live Render URL hai
+  "https://tvi-lms-frontend.onrender.com", // <--- Yeh tumhare frontend ka live Render URL hai
 ];
 const LOCALHOST_ORIGIN = /^http:\/\/localhost:\d+$/;
 
