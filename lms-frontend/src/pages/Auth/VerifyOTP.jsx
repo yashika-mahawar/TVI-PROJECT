@@ -21,7 +21,7 @@ function VerifyOTP() {
     setVerifying(true);
     try {
       const res = await API.post(
-  "/api/auth/verify-otp",
+  "/auth/verify-otp",
   { email, otp }
 );
       if (res.data.success) navigate("/reset-password", { state: { email } });

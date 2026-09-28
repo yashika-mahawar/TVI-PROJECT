@@ -15,7 +15,7 @@ function ResetPassword() {
     e.preventDefault();
     try {
       await API.post(
-  "/api/auth/reset-password",
+  "/auth/reset-password",
   {
     email,
     newPassword,

@@ -13,7 +13,7 @@ function ForgotPassword() {
     setLoading(true);
     try {
       const res = await API.post(
-  "/api/auth/forgot-password",
+  "/auth/forgot-password",
   { phone }
 );
       alert("OTP sent to your WhatsApp number!");
